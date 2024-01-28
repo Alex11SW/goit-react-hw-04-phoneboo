@@ -2,7 +2,6 @@ import styles from "./my-book-list.module.css";
 
 const MyBookList = ({ items, deleteBook }) => {
   if (!Array.isArray(items)) {
-    // Если items не является массивом, выводим сообщение об ошибке и возвращаем null
     console.error("Items is not an array:", items);
     return null;
   }
